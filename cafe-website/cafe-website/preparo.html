@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preparo do Café - Café & Cultura</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <h1 class="logo">☕ Café & Cultura</h1>
+            <ul class="nav-links">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="historia.html">História</a></li>
+                <li><a href="tipos.html">Tipos de Café</a></li>
+                <li><a href="preparo.html" class="active">Preparo</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="mapa.html">Mapa</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container page-content">
+        <h1>A Arte de Preparar Café</h1>
+        
+        <section class="brewing-methods">
+            <h2>Métodos de Preparo</h2>
+            
+            <div class="method-card">
+                <img src="images/metodo-coador.jpg" alt="Método Coador">
+                <div class="method-content">
+                    <h3>Coador de Papel (V60/Hario)</h3>
+                    <p>Um dos métodos mais populares e acessíveis. Destaca as notas de sabor do café.</p>
+                    <ul class="steps-list">
+                        <li>Aqueça a água a 92-96°C</li>
+                        <li>Use 15g de café para 250ml de água</li>
+                        <li>Despeje a água em movimentos circulares</li>
+                        <li>Tempo total: 2:30-3:00 minutos</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="method-card">
+                <img src="images/metodo-prensa.jpg" alt="Prensa Francesa">
+                <div class="method-content">
+                    <h3>Prensa Francesa</h3>
+                    <p>Método de imersão que produz um café encorpado e aromático.</p>
+                    <ul class="steps-list">
+                        <li>Use moagem grossa</li>
+                        <li>Proporção: 1:15 (café:água)</li>
+                        <li>Deixe em infusão por 4 minutos</li>
+                        <li>Pressione o êmbolo lentamente</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="method-card">
+                <img src="images/metodo-aeropress.jpg" alt="AeroPress">
+                <div class="method-content">
+                    <h3>AeroPress</h3>
+                    <p>Método versátil que permite experimentar diferentes receitas e perfis de sabor.</p>
+                    <ul class="steps-list">
+                        <li>Moagem média-fina</li>
+                        <li>Temperatura: 80-85°C</li>
+                        <li>Tempo de infusão: 1-2 minutos</li>
+                        <li>Pressione suavemente por 20-30 segundos</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="tips-section">
+            <h2>💡 Dicas Profissionais</h2>
+            <div class="tips-grid">
+                <div class="tip-card">
+                    <span class="tip-icon">🌡️</span>
+                    <h4>Temperatura Ideal</h4>
+                    <p>A água deve estar entre 90-96°C. Água muito quente pode queimar o café e extrair sabores amargos.</p>
+                </div>
+                <div class="tip-card">
+                    <span class="tip-icon">⚖️</span>
+                    <h4>Proporção Correta</h4>
+                    <p>Use uma balança! A proporção padrão é 1:16 (1g de café para 16ml de água).</p>
+                </div>
+                <div class="tip-card">
+                    <span class="tip-icon">⏱️</span>
+                    <h4>Moagem na Hora</h4>
+                    <p>Moa os grãos apenas antes do preparo para preservar os aromas e óleos essenciais.</p>
+                </div>
+                <div class="tip-card">
+                    <span class="tip-icon">💧</span>
+                    <h4>Água de Qualidade</h4>
+                    <p>Use água filtrada. A qualidade da água afeta diretamente o sabor do café.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="calculator-section">
+            <h2>🧮 Calculadora de Café</h2>
+            <div class="calculator">
+                <p>Calcule a quantidade ideal de café para sua xícara:</p>
+                <div class="calc-inputs">
+                    <label for="waterAmount">Quantidade de água (ml):</label>
+                    <input type="number" id="waterAmount" value="250" min="50" max="1000">
+                    <button id="calculateBtn" class="btn">Calcular</button>
+                </div>
+                <div id="calcResult" class="calc-result"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Café & Cultura. Trabalho acadêmico - UNIFESO</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria - Café & Cultura</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <h1 class="logo">☕ Café & Cultura</h1>
+            <ul class="nav-links">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="historia.html">História</a></li>
+                <li><a href="tipos.html">Tipos de Café</a></li>
+                <li><a href="preparo.html">Preparo</a></li>
+                <li><a href="galeria.html" class="active">Galeria</a></li>
+                <li><a href="mapa.html">Mapa</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container page-content">
+        <h1>Galeria de Café</h1>
+        <p class="intro-text">Uma coleção visual celebrando a beleza e diversidade do mundo do café</p>
+
+        <section class="gallery">
+            <div class="gallery-item" onclick="openModal(this)">
+                <img src="images/galeria-1.jpg" alt="Grãos de café torrados">
+                <div class="gallery-caption">Grãos Torrados</div>
+            </div>
+            <div class="gallery-item" onclick="openModal(this)">
+                <img src="images/galeria-2.jpg" alt="Latte art">
+                <div class="gallery-caption">Latte Art</div>
+            </div>
+            <div class="gallery-item" onclick="openModal(this)">
+                <img src="images/galeria-3.jpg" alt="Cafeteria aconchegante">
+                <div class="gallery-caption">Cafeteria Artesanal</div>
+            </div>
+            <div class="gallery-item" onclick="openModal(this)">
+                <img src="images/galeria-4.jpg" alt="Plantação de café">
+                <div class="gallery-caption">Plantação de Café</div>
+            </div>
+            <div class="gallery-item" onclick="openModal(this)">
+                <img src="images/galeria-5.jpg" alt="Barista preparando café">
+                <div class="gallery-caption">Arte do Barista</div>
+            </div>
+            <div class="gallery-item" onclick="openModal(this)">
+                <img src="images/galeria-6.jpg" alt="Diferentes métodos de preparo">
+                <div class="gallery-caption">Métodos de Preparo</div>
+            </div>
+            <div class="gallery-item" onclick="openModal(this)">
+                <img src="images/galeria-7.jpg" alt="Xícara de café especial">
+                <div class="gallery-caption">Café Especial</div>
+            </div>
+            <div class="gallery-item" onclick="openModal(this)">
+                <img src="images/galeria-8.jpg" alt="Moedor de café manual">
+                <div class="gallery-caption">Moedor Artesanal</div>
+            </div>
+        </section>
+
+        <section class="media-section">
+            <h2>📹 Vídeo: Como fazer Latte Art</h2>
+            <div class="video-container">
+                <video controls poster="images/latte-art-thumb.jpg">
+                    <source src="video/latte-art-tutorial.mp4" type="video/mp4">
+                    Seu navegador não suporta o elemento de vídeo.
+                </video>
+                <p class="video-description">Tutorial completo de como criar desenhos no leite vaporizado</p>
+            </div>
+        </section>
+
+        <section class="audio-section">
+            <h2>🎵 Playlist: Música para Apreciar Café</h2>
+            <div class="audio-playlist">
+                <div class="audio-item">
+                    <h4>☕ Bossa Nova Cafeteria</h4>
+                    <audio controls>
+                        <source src="audio/bossa-cafe.mp3" type="audio/mpeg">
+                        Seu navegador não suporta o elemento de áudio.
+                    </audio>
+                </div>
+                <div class="audio-item">
+                    <h4>☕ Jazz Suave</h4>
+                    <audio controls>
+                        <source src="audio/jazz-cafe.mp3" type="audio/mpeg">
+                        Seu navegador não suporta o elemento de áudio.
+                    </audio>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="imageModal" class="modal">
+        <span class="modal-close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage" alt="Imagem ampliada da galeria">
+        <div id="modalCaption"></div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Café & Cultura. Trabalho acadêmico - UNIFESO</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

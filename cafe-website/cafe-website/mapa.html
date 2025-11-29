@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Café & Cultura - Mapa</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <style>
+        .leaflet-control-attribution { font-size: 11px; }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <h1 class="logo">☕ Café & Cultura</h1>
+            <ul class="nav-links">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="historia.html">História</a></li>
+                <li><a href="tipos.html">Tipos de Café</a></li>
+                <li><a href="preparo.html">Preparo</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="mapa.html" class="active">Mapa</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container page-content">
+        <h1>Mapa - Cafeterias Próximas</h1>
+        <p class="map-help">Permita o acesso à sua localização para ver cafeterias próximas. Se preferir, altere o raio de busca.</p>
+
+        <div id="map"></div>
+
+        <div class="map-controls">
+            <label for="radius">Raio (km):</label>
+            <select id="radius">
+                <option value="0.5">0.5</option>
+                <option value="1" selected>1</option>
+                <option value="2">2</option>
+                <option value="5">5</option>
+                <option value="10">10</option>
+                <option value="20">20</option>
+            </select>
+            <button id="findBtn" class="btn">Encontrar Cafeterias</button>
+        </div>
+
+        <p class="map-help">Os pontos vêm do OpenStreetMap via Overpass API. Nem todas as cafeterias podem estar registradas.</p>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Café & Cultura. Trabalho acadêmico - UNIFESO</p>
+    </footer>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="js/map.js"></script>
+</body>
+</html>
+            
